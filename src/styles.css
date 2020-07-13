@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans", sans-serif;
+  color: #fff
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: grey;
+}
+
+.navbar--logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbar--logo-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar--link {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height:2rem;
+}
+
+.navbar--link-item:hover {
+  background-color: lightgreen;
+}
+
+
+.navbar--link-item {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* Welcome */
+.welcome {
+  background-color: #1f1f1f;
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.welcome--logo {
+  width: 10rem;
+}
+
+.welcome--about {
+  padding: 2rem;
+  width: 50rem;
+  color: #444;
+  text-align: justify;
+  margin: auto;
+}
+
+.welcome__cta-primary {
+  background: #e74c3c;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+}
