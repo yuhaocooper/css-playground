@@ -1,19 +1,29 @@
 import React from 'react'
-import "./styles.css"
+import "./navbar.css"
 import Logo from "./logo.svg"
 
-const NavBar = () => (
-  <nav className="navbar">
-    <div className="navbar--logo-holder">
-      <img src={Logo} alt="logo" className="navbar--logo" />
-      <p> CSS  Playground</p>
+function NavBar() {
+  return (
+    <div className="navbar">
+      <div className='navbar--header'>
+        <img src={Logo} alt="logo" className='Logo'/>
+        <p> CSS Playground </p>
+      </div>
+      <ul className='navbar--list'>
+        <li className='navbar--list-item'>Home</li>
+        <li className='navbar--list-item'>About</li>
+        <li className='navbar--list-item'>Visit</li>
+        <li className='dropdown'>
+          <a className='navbar--list-item'>Links</a>
+          <ul className='dropdown-menu'>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <ul className="navbar--link">
-      <li className="navbar--link-item">Home</li>
-      <li className="navbar--link-item">About</li>
-      <li className="navbar--link-item">Blog</li>
-    </ul>
-  </nav>
-)
+  )
+}
 
 export default NavBar
