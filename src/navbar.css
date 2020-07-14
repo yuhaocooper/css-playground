@@ -1,8 +1,9 @@
 .navbar{
-  background-color: grey;
+  background-color: lightyellow;
   display:flex;
   justify-content: flex-start;
   font-size: 20px;
+  height: 10vh;
 }
 
 .navbar--header{
@@ -13,7 +14,7 @@
 
 .Logo{
   width: 2rem;
-  height: 2rem;
+  height: 100%;
   margin-right: 8px;
 }
 
@@ -25,32 +26,35 @@
   text-align: center;
 }
 
-.navbar--list-item{
-  display:block;
-  padding: 14px 16px;
+.navbar--list li{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100px;
 }
 
-.navbar--list-item:hover{
-  background-color: darkgrey
-}
-
-.dropdown-menu{
+.dropdown ul{
   display:none;
-  position: absolute;
-  list-style-type: none;
+  flex-direction: column;
+  align-items:center;
+  position:absolute;
+  top: 10vh;
   background-color: grey;
 }
 
-.dropdown:hover .dropdown-menu{
-  display:block;
+.dropdown ul li{
+  width: 100px;
+  height: 2rem;
 }
 
-.dropdown-menu li {
-  padding: 14px 16px;
+.dropdown:hover ul{
+  display:flex;
 }
 
-.dropdown-menu li:hover{
-  background-color: darkgrey;
+.navbar--list li:hover{
+  background-color: darkgrey
 }
 
 @media only screen and (min-width: 768px) {

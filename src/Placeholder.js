@@ -3,27 +3,17 @@ import "./styles.css"
 
 function Placeholder() {
   return (
-    <div style={{maxwidth:'200px'}}>
-      <p style={{ color: 'black', fontSize:'50px'}}>
-      aklshdflkjhadslkfjasdljfl;asdjfdjsa;lf
-      asdkfjlasjfklsad
-      aksdjlfjasldkf
-      kjlasjflkdja;lfjds;alfjkdla
-      kals;fdjajlk;sdfjk;lasdlkj;fkj;lasf;kjlasjflkdjaklasdflk;as
-      lkjasdjklfasjdklafkljsdkjlfajkasdfl
-      akljsdfjklasjklafsjkfasjklaf
-      ajkslfkjlsakjlfdskjlfajkalfds
-      asdkfjlasjfklsadsdaf
-      da
-      asdkfjlasjfklsadfasd
-
-      asdkfjlasjfklsadfasd
-      fadsfdsa
-      asdkfjlasjfklsadfsdaf
-      asdkfjlasjfklsadfasdasdf
-      asdkfjlasjfklsadasdfas
-      fdasfdsaf
-      </p>
+    <div className="section two-containers">
+      <div className='half-container'>
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
+      <div className='half-container'>
+        <h1>The City</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>Resize the browser window to see how the content respond to the resizing.</p>
+      </div>
     </div>
   )
 }

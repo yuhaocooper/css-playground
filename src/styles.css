@@ -1,18 +1,33 @@
+@font-face {
+  font-family: 'Alcubierre';
+  src: url('./fonts/Alcubierre.otf') format('opentype')
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Lucida Sans", sans-serif;
+  font-family: 'Arial'
+
 }
 
-@media only screen and (max-width: 600px) {
-.navbar{
-  display: flex;
-  justify-content: flex-start;
-  background-color: green;
-  }
+.middle-container{
+  margin:auto;
+  padding-top: 1rem;
+  width: 50%;
 }
 
+.two-containers{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.half-container{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
 
 /* Welcome */
 .welcome {
@@ -20,7 +35,7 @@
   background-attachment: fixed;
   background-size: cover;
   line-height: 1.8;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +62,18 @@
   border: none;
   border-radius: 20px;
   font-weight: 700;
+}
+
+.section {
+  height: 50vh;
+}
+
+.section:first-child{
+  height:90vh;
+}
+
+@media only screen and (min-width: 768px) {
+.half-container{
+  width: 50%;
+  }
 }
