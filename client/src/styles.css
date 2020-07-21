@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Alcubierre';
+  src: url('./fonts/Alcubierre.otf') format('opentype')
+}
+
+@keyframes example {
+  from {background-color: #1f1f1f}
+  to {background-color: lightblue}
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Arial'
+
+}
+
+.middle-container{
+  margin:auto;
+  padding-top: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.two-containers{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.half-container{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Welcome */
+.welcome {
+  background-color: #1f1f1f;
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.8;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  animation-name:example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.welcome--logo {
+  width: 10rem;
+}
+
+.welcome--about {
+  padding: 2rem;
+  width: 50rem;
+  color: #444;
+  text-align: justify;
+  margin: auto;
+}
+
+.welcome__cta-primary {
+  background: #e74c3c;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.section {
+  height: 50vh;
+}
+
+.section:first-child{
+  height:90vh;
+}
+
+@media only screen and (min-width: 768px) {
+.half-container{
+  width: 50%;
+  }
+}
